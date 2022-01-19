@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"$lib": ["lib"],
+			"$lib/*": ["lib/*"],
+			"$pages": ["pages"],
+			"$pages/*": ["pages/*"],
+			"$api": ["pages/api"],
+			"$api/*": ["pages/api/*"],
+			"$styles": ["styles"],
+			"$styles/*": ["styles/*"],
+			"$public": ["public"],
+			"$public/*": ["public/*"],
+			"$components": ["components"],
+			"$components/*": ["components/*"]
+		}
+	}
+}
