@@ -4,7 +4,6 @@ import Link from 'next/link';
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react';
 import _ from '$lib/cachestore';
-import { NextPageContext } from 'next';
 
 /**
  * 
@@ -57,7 +56,7 @@ function Home({_posts, cache = false}) {
 
 /**
  * 
- * @param {NextPageContext} ctx 
+ * @param {import('next').NextPageContext} ctx 
  * @returns 
  */
 Home.getInitialProps = async (ctx) => {

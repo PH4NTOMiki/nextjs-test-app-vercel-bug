@@ -1,10 +1,9 @@
 import { connectToDB } from "$lib/db";
-import { NextApiRequest, NextApiResponse } from 'next';
 
 /**
  * 
- * @param {NextApiRequest} req 
- * @param {NextApiResponse} res 
+ * @param {import('next').NextApiRequest} req 
+ * @param {import('next').NextApiResponse} res 
  */
 export default async function handler(req, res) {
 	console.log(new URL(req.url, `${req.headers[`x-forwarded-proto`]===`https`?`https`:`http`}://${req.headers.host}`).toString());
